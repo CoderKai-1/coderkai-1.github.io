@@ -1,12 +1,15 @@
 const topbarTitle = document.getElementById('topbarTitle');
 const titleName = document.getElementById('titleName');
 const videoOverlay = document.getElementById("videoOverlay");
+const imageEnlargen = document.getElementById("imageEnlargen");
 
 const ribbons = document.querySelectorAll('.ribbon');
 const flat_ribbons = document.querySelectorAll('.flat_ribbon')
-const topbarItems = document.querySelectorAll('.topbar_item');
-const projectOverlays = document.querySelectorAll('.project_overlay');
+const top_bar_items = document.querySelectorAll('.topbar_item');
+const project_overlays = document.querySelectorAll('.project_overlay');
 const iframes = document.querySelectorAll('iframe')
+
+const clickable_images = document.querySelectorAll('.clickable_screenshot')
 
 window.onload = function () {
 	var mobile = (/iphone|ipad|ipod|android|blackberry|mini|windows\sce|palm/i.test(navigator.userAgent.toLowerCase()));
@@ -14,6 +17,12 @@ window.onload = function () {
 		videoPreview.remove()
 		alert("This site is not suitable for mobile devices using data (large file sizes)");
 	}
+
+	// for screenshots to be displayed large
+	clickable_images.forEach(element => {
+		element.addEventListener('click', function () { enlargenImage(element.getAttribute("src")); });
+	});
+	
 }
 
 // const videoPreview = document.getElementById("videoPrev");
@@ -77,7 +86,7 @@ function scrollCall() {
 
 	flat_ribbons.forEach(element => {
 		let ribbonDistanceFromTop = element.getBoundingClientRect().top;
-		console.log(ribbonDistanceFromTop)
+		// console.log(ribbonDistanceFromTop)
 		
 		element.style.backgroundColor = "rgba(20, 20, 20, " + (1+-ribbonDistanceFromTop * 0.01) + ")";
 	});
@@ -105,7 +114,7 @@ function scrollCall() {
 		topbarTitle.style.opacity = 0
 	}
 
-	topbarItems.forEach(element => {
+	top_bar_items.forEach(element => {
 		let distanceFromTop = element.getBoundingClientRect().top
 
 		if (window.scrollY > 250) {
@@ -158,7 +167,7 @@ function showOverlay(overlayName) {
 	// console.log(overlayName)
 
 
-	projectOverlays.forEach(element => {
+	project_overlays.forEach(element => {
 		// console.log(element.id)
 		if (element.id == overlayName) {
 			document.body.style.overflow = "hidden";
@@ -171,19 +180,34 @@ function showOverlay(overlayName) {
 	});
 }
   
-  function hideAllOverlays() {
-	projectOverlays.forEach(element => {
-		if (!element.classList.contains(".show")) {
-			element.classList.remove("show");
-			element.classList.add("hide");
+function hideAllOverlays() {
+project_overlays.forEach(element => {
+	if (!element.classList.contains(".show")) {
+		element.classList.remove("show");
+		element.classList.add("hide");
+	}
+	document.body.style.overflow = "";
+	
+	iframes.forEach(iframe => {
+		if (iframe) {
+			var iframeSrc = iframe.src;
+			iframe.src = iframeSrc;
 		}
-		document.body.style.overflow = "";
-		
-		iframes.forEach(iframe => {
-			if (iframe) {
-				var iframeSrc = iframe.src;
-				iframe.src = iframeSrc;
-			}
-		});
 	});
+});
+}
+
+function enlargenImage(source) {
+	if (!imageEnlargen.classList.contains(".hide")) {
+		imageEnlargen.classList.remove("hide");
+		imageEnlargen.classList.add("show");
+	}
+	imageEnlargen.querySelector("img").setAttribute("src",source)
+}
+
+function hideImageEnlargen() {
+	if (!imageEnlargen.classList.contains(".show")) {
+		imageEnlargen.classList.remove("show");
+		imageEnlargen.classList.add("hide");
+	}
 }
