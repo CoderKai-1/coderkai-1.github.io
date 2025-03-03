@@ -201,12 +201,17 @@ h1 {
 	background-color: rgba(0, 136, 255, 0);
 	position: relative;
 	height: 50%;
-	transform: translate(0px, -218px);
+	transform: translate(0px, -110%);
 	padding: 10px;
 	pointer-events: none;
 	transition-duration: 200ms;
 	transition-timing-function: cubic-bezier();
 	border-radius: 3px;
+	bottom:0px;
+	border: 0px solid black;
+	border-left: 4px;
+	border-right: 4px;
+	border-bottom: 4px;
 }
 
 .project_thumbnail img{
@@ -226,7 +231,8 @@ h1 {
 .project_thumbnail:hover + .project_box_description{
 	opacity: 1;
 	background-color: rgba(0, 0, 0, 0.905);
-	transform: translate(-5px, -223px);
+	/* transform: translate(-5px, -223px); */
+	transform: translate(-0.67%, -111%);
 	transition-duration: 200ms;
 	transition-timing-function: cubic-bezier();
 }
