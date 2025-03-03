@@ -1,12 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
 
 html {
-	scroll-behavior: smooth;
+	scroll-behavior: smooth !important;
 	scrollbar-gutter: stable;
 }
 
 body {
-	
+	zoom:85%;
 	margin: 0%;
 	border: 0%;
 
@@ -194,6 +194,7 @@ h1 {
 	width: 750px;
 	height: 350px;
 	margin: 30px;
+
 }
 
 .project_box_description {
@@ -201,7 +202,7 @@ h1 {
 	background-color: rgba(0, 136, 255, 0);
 	position: relative;
 	height: 50%;
-	transform: translate(0px, -110%);
+	transform: translate(-0.5%, -110%);
 	padding: 10px;
 	pointer-events: none;
 	transition-duration: 200ms;
@@ -212,6 +213,7 @@ h1 {
 	border-left: 4px;
 	border-right: 4px;
 	border-bottom: 4px;
+	font-size: 18px;
 }
 
 .project_thumbnail img{
@@ -373,7 +375,8 @@ h1 {
 	left: 0;
 	right: 0;
 	bottom: 0;
-	background-color: rgb(30, 30, 30);
+	/* background-color: rgb(30, 30, 30); */
+	background-image: linear-gradient(to right,rgb(15, 29, 42),rgb(46, 46, 46));
 }
 
 .project_overlay_main #exitButton {
@@ -419,18 +422,24 @@ h1 {
 	flex-grow: 1;
 	font-size: 20px;
 	line-height: 25px;
+	overflow-y: auto;
 
 }
 .project_overlay_description li {
 	line-height: 25px;
 }
 .project_overlay_video {
+	/* padding-top: 56.25%; */
+	aspect-ratio: 16 / 9;
+	height: 100%;
+	/* width: 40%;  */
 	border-radius: 4px;
 	box-shadow: rgba(0, 0, 0, 0.5) 3px 3px 5px;
 }
 
 .project_overlay_media_carousel {
 	background-color: #3f3f3f;
+	background-image: linear-gradient(to bottom, rgb(55, 55, 59), rgb(45, 45, 46));
 	flex-grow: 1;
 	display: flex;
 	position: relative;
@@ -476,7 +485,7 @@ h1 {
 	margin: 10px;
 	background: beige;
 	transition: 0.5s;
-	height: 250px;
+	height: 70%;
 	border-radius: 5px;
 	box-shadow: 1px 2px 5px rgba(0, 0, 0, 0.498);
 	position:relative;
@@ -773,4 +782,13 @@ h1 {
 	width: 100%;
 	justify-content: center;
 	align-items: center;
+}
+
+.contrast_link {
+	color: rgb(63, 137, 248);
+	font-weight: bold;
+	font-size: large;
+}
+.contrast_link:hover {
+	color: rgb(82, 82, 242);
 }
