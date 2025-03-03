@@ -1,0 +1,562 @@
+<head>
+
+<title>Kai Williams' Portfolio</title>
+<link href="style.css" rel="stylesheet" type="text/css" media="screen">
+<link rel="shortcut icon" href="media/favicon.PNG" type="image/x-icon">
+<script defer src="script.js"></script>
+
+</head>
+<main>
+	<div id=topBar> 
+		<ul>
+			<li id="topbarTitle"><a class="topBar_link" href="#">KAI WILLIAMS</a></li>
+			<li class="topBar_item"><a class="topBar_link" href="#contact">Contact</a></li>
+			<li class="topBar_item"><a class="topBar_link" href="#skills">Technical Skills</a></li>
+			<li class="topBar_item"><a class="topBar_link" href="#projects">Projects</a></li>
+			<li class="topBar_item"><a class="topBar_link" href="#about">About</a></li>
+		</ul>
+	</div>
+	<body>
+
+
+
+		<div id="videoContainer">
+
+
+			<video id="videoPrev" autoplay muted loop>
+				<source src="media/kw_gamedev_compilation_nosound.mp4" type="video/mp4">
+			Your browser does not support the video tag.
+			</video> 
+			<div id="videoOverlay"></div>
+		  
+			<h1 id="titleName">KAI WILLIAMS<h1>
+
+		</div>
+
+		<div id="belowVideo">
+
+			<div id="about"></div>
+			<div class="ribbon" >
+				<h1>
+					About
+				</h1>
+				<p>A bit about me</p>
+			</div>
+
+
+			<br><br><br>
+			<span class="centerer"><span class="typewriter"><h1 class="about_title">Designing worlds</h1></span></span>
+			<br><br>
+			<div class="about_grid">
+				<div class="about_picture" ><img style="rotate: 44deg; width: 140px;" class="fade_in" src="media/ship_3.png"/></div>
+				<div class="about_picture" ><img style="rotate: -44deg;" class="fade_in" src="media/ship_2.png"/></div>
+				<span class="about_text fade_in">
+					Hi! I'm Kai, a game developer and designer.
+					I've been making games since I was 9 and I published my first game on Steam when I was 18.
+
+					
+				</span>
+				<span class="about_text fade_in">
+					On this page you can take a peek at some of the projects that I've worked on over the years, ranging from personal engine experiments to fully fledged Steam-published games.
+				</span>
+			</div>
+			<svg viewBox="0 0 340 190" style="background-color: rgba(240, 248, 255, 0);">
+				<path class="about_line" d="M50 5
+				L292 5
+				L100 5
+				L150 80
+				L300 80
+				L230 80
+				L150 150
+				L50 150"/>
+				
+			</svg>
+
+			<div id="projects"></div>
+			<div class="ribbon flat_ribbon">
+				<h1>
+					Projects
+				</h1>
+				<p>A collection of some of my best projects</p>
+			</div>
+
+			<div class="project_shelf" >
+				<div class="project_overlay hide" id="shape_shifter">
+					<div class="project_overlay_main">
+						<div class="project_overlay_description_and_video">
+							<div class="project_overlay_description">
+								<p>
+								<h1 style="margin-left: 0%; display:inline;">SHAPE SHIFTER</h1> <a style="bottom: 5px;" class="fancy_button" target="_blank" href="https://store.steampowered.com/app/2981580/SHAPE_SHIFTER"><img src="media/steam_circle.png"> Steam Store Page</a>
+								</p>
+								<b class="project_name_label blue">Game Development</b>
+								<b class="project_name_label green">Godot/GDScript</b>
+								<b class="project_name_label purple">Solo Project</b>
+								<b class="project_name_label red">Steam</b>
+								<b class="project_name_label red">Multiplayer</b>
+								<br><br>
+								Shape Shifter started as a 2D Level Editor I made in <i>Godot</i> for a school assignment
+								<br>in January of 2024 but turned into a passion project of mine to explore the power
+								<br>of Steam and the Steamworks-API.
+								<br>
+								<br>
+								<b>Some of the base features include:</b>
+								<br>
+									<ul>
+									<li>Level editor </li>
+									<li>Some tutorial demo levels for players to get started</li>
+									<li>Full controller & Steam Deck support (100% Steam Deck Verified)</li>
+									<li>Online multiplayer up to 16 people</li>
+									<li>Steam Workshop for people to upload their custom levels</li>
+									<li>Leaderboards of fastest times for individual online levels</li>
+									<li>Steam Achievements</li>
+									</ul>
+									<br>
+
+									<b>Time to develop:</b> About 3 months (January, November and December 2024)
+							</div>
+							<iframe class="project_overlay_video" width="800" height="450" src="https://www.youtube.com/embed/O3WmWiKdnjI?si=EvH_u8I3hkE8e3jW" title="YouTube video player" frameborder="0" allowfullscreen></iframe>
+							<a onclick="hideAllOverlays()" id="exitButton" style="cursor: pointer;">&#10006;</a>
+						
+						</div>
+
+						<div class="project_overlay_media_carousel" style="--t:75s"> <!-- needs at least 4 images! (5-6 reccomended) -->
+							<div>
+								<img src="media/shape_shifter/shape_shifter_screenshot_1.png" alt="Shape Shifter screenshot" />
+								<img src="media/shape_shifter/shape_shifter_screenshot_2.png" alt="Shape Shifter screenshot" />
+								<img src="media/shape_shifter/shape_shifter_screenshot_3.png" alt="Shape Shifter screenshot" />
+								<img src="media/shape_shifter/shape_shifter_screenshot_4.png" alt="Shape Shifter screenshot" />
+								<img src="media/shape_shifter/shape_shifter_screenshot_5.png" alt="Shape Shifter screenshot" />
+							</div>
+							<div>
+								<img src="media/shape_shifter/shape_shifter_screenshot_1.png" alt="Shape Shifter screenshot" />
+								<img src="media/shape_shifter/shape_shifter_screenshot_2.png" alt="Shape Shifter screenshot" />
+								<img src="media/shape_shifter/shape_shifter_screenshot_3.png" alt="Shape Shifter screenshot" />
+								<img src="media/shape_shifter/shape_shifter_screenshot_4.png" alt="Shape Shifter screenshot" />
+								<img src="media/shape_shifter/shape_shifter_screenshot_5.png" alt="Shape Shifter screenshot" />
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="project_overlay hide" id="esrc">
+					<div class="project_overlay_main">
+						<div class="project_overlay_description_and_video">
+							<div class="project_overlay_description">
+								<p>
+								<h1 style="margin-left: 0%; display:inline;">Elite Space Repair Crew</h1>
+								</p>
+								<b class="project_name_label blue">Game Development</b>
+								<b class="project_name_label green">Unreal Engine/C++</b>
+								<b class="project_name_label purple">Solo Project</b>
+								<br><br>
+								ESRC started as a project to learn the incredibly powerful Unreal Engine.
+								<br>The game is a 3D first-person game where the player starts in a randomly-generated
+								<br>corridor system and must repair as many broken components as they can before their 
+								<br>welding tool runs out of battery all while avoiding an evil robot that is chasing them.
+
+								<br>
+								<br>
+								<b>Some of the base features include:</b>
+								<br>
+									<ul>
+									<li>Randomly generated broken machinery that can be fixed with a welding tool</li>
+									<li>Adjustable settings such as volume, resolution and graphics</li>
+									<li>Randomly generated world map using Unreal Blueprints</li>
+									<li>Custom sound effects and music made by me in FL Studio</li>
+									</ul>
+									<br>
+
+									<b>Time to develop:</b> About 1.5 months (June - July 2024)
+									<br><i>Note*: Almost all the models were not made by me</i>
+							</div>
+							<iframe class="project_overlay_video" width="800" height="450" src="https://www.youtube.com/embed/8R-JG_d3V9s?si=diodcOBZHfdWKQr8" title="YouTube video player" frameborder="0" allowfullscreen></iframe>							<a onclick="hideAllOverlays()" id="exitButton" style="cursor: pointer;">&#10006;</a>
+						
+						</div>
+
+						<div class="project_overlay_media_carousel" style="--t:75s"> <!-- needs at least 4 images! (5-6 reccomended) -->
+							<div>
+								<img src="media/esrc/esrc_screenshot_1.png" alt="Shape Shifter screenshot" />
+								<img src="media/esrc/esrc_screenshot_2.png" alt="Shape Shifter screenshot" />
+								<img src="media/esrc/esrc_screenshot_3.png" alt="Shape Shifter screenshot" />
+								<img src="media/esrc/esrc_screenshot_4.png" alt="Shape Shifter screenshot" />
+								<img src="media/esrc/esrc_screenshot_5.png" alt="Shape Shifter screenshot" />
+								<img src="media/esrc/esrc_screenshot_6.png" alt="Shape Shifter screenshot" />
+							</div>
+							<div>
+								<img src="media/esrc/esrc_screenshot_1.png" alt="Shape Shifter screenshot" />
+								<img src="media/esrc/esrc_screenshot_2.png" alt="Shape Shifter screenshot" />
+								<img src="media/esrc/esrc_screenshot_3.png" alt="Shape Shifter screenshot" />
+								<img src="media/esrc/esrc_screenshot_4.png" alt="Shape Shifter screenshot" />
+								<img src="media/esrc/esrc_screenshot_5.png" alt="Shape Shifter screenshot" />
+								<img src="media/esrc/esrc_screenshot_6.png" alt="Shape Shifter screenshot" />
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="project_overlay hide" id="ace_of_shades">
+					<div class="project_overlay_main">
+						<div class="project_overlay_description_and_video">
+							<div class="project_overlay_description">
+								<p>
+								<h1 style="margin-left: 0%; display:inline;">Ace of Shades</h1> 
+								</p>
+								<b class="project_name_label blue">Game Development</b>
+								<b class="project_name_label green">Unity/C#</b>
+								<b class="project_name_label red">VR</b>
+								<br><br>
+								Ace Of Shades is a Virtual Reality (VR) game I made in <i>Unity</i> for a school assignment.
+								<br>For this project I worked in a team of two, where my teammate made all the 3D
+								<br>models, while I focused on the programming, audio design and world design.
+								<br>
+								<br>
+								<b>Some of the base features include:</b>
+								<br>
+									<ul>
+									<li>Voice acting and queued events</li>
+									<li>Valve Index grip controls</li>
+									<li>Custom music made in FL Studio</li>
+									<li>Multiple weapons with unique firing patterns</li>
+									<li>A boss fight with multiple waves and attacks</li>
+									</ul>
+									<br>
+									<b>Time to develop:</b> About 1 month (June 2023)
+							</div>
+							<iframe class="project_overlay_video" width="800" height="450" src="https://www.youtube.com/embed/_LZ2l3RrsIw?si=hZUoE2MJXOm24E6F" title="YouTube video player" frameborder="0" allowfullscreen></iframe>
+							<a onclick="hideAllOverlays()" id="exitButton" style="cursor: pointer;">&#10006;</a>
+						</div>
+
+						<div class="project_overlay_media_carousel" style="--t:75s"> <!-- needs at least 4 images! (5-6 reccomended) -->
+							<div>
+								<img src="media/aos/ace_of_shades_screenshot_1.png" alt="Shape Shifter screenshot" />
+								<img src="media/aos/aos_screenshot_1.png" alt="Shape Shifter screenshot" />
+								<img src="media/aos/aos_screenshot_4.png" alt="Shape Shifter screenshot" />
+								<img src="media/aos/aos_screenshot_2.png" alt="Shape Shifter screenshot" />
+								<img src="media/aos/aos_screenshot_3.png" alt="Shape Shifter screenshot" />
+							</div>
+							<div>
+								<img src="media/aos/ace_of_shades_screenshot_1.png" alt="Shape Shifter screenshot" />
+								<img src="media/aos/aos_screenshot_1.png" alt="Shape Shifter screenshot" />
+								<img src="media/aos/aos_screenshot_4.png" alt="Shape Shifter screenshot" />
+								<img src="media/aos/aos_screenshot_2.png" alt="Shape Shifter screenshot" />
+								<img src="media/aos/aos_screenshot_3.png" alt="Shape Shifter screenshot" />
+
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="project_overlay hide" id="fragment">
+					<div class="project_overlay_main">
+						<div class="project_overlay_description_and_video">
+							<div class="project_overlay_description">
+								<p>
+								<h1 style="margin-left: 0%; display:inline;">Fragment</h1>
+								</p>
+								<b class="project_name_label blue">Game Development</b>
+								<b class="project_name_label green">Godot/GDScript</b>
+								<b class="project_name_label purple">Solo Project</b>
+								<br><br>
+								<b>Fragment</b> is a nonlinear 2D Side-scrolling Metroidvania I'm making in <i>Godot</i>.
+								<br>The game will gradually introduce new mechanics that the player must learn to 
+								<br>use so they can explore more of the world and eventually beat a boss enemy.
+								<br>
+
+								
+								<br>
+									<ul>
+									<li>Collectibles to guide the player</li>
+									<li>Basic tutorials for non-gamers</li>
+									<li>Dialogue system</li>
+									<li>4 unique Abilities</li>
+									<li>Boss-fight that tests the player's skill</li>
+									<li>In-depth key rebinding system</li>
+									<li>grace mechanics (coyote time/jump buffering) and save points</li>
+									</ul>
+									<br>
+
+									<b>Time to develop:</b> About 3 months (August, November, December 2024 - Now)
+							</div>
+							<iframe class="project_overlay_video" width="800" height="450" src="https://www.youtube.com/embed/opN_TRPK0Zg?si=Y7JBLi9WKq460g_O" title="YouTube video player" frameborder="0" allowfullscreen></iframe>
+							<a onclick="hideAllOverlays()" id="exitButton" style="cursor: pointer;">&#10006;</a>
+						
+						</div>
+
+						<div class="project_overlay_media_carousel" style="--t:75s"> <!-- needs at least 4 images! (5-6 reccomended) -->
+							<div>
+								<img src="media/fragment/fragment_screenshot_1.png" alt="Shape Shifter screenshot" />
+								<img src="media/fragment/fragment_screenshot_2.png" alt="Shape Shifter screenshot" />
+								<img src="media/fragment/fragment_screenshot_3.png" alt="Shape Shifter screenshot" />
+								<img src="media/fragment/fragment_screenshot_4.png" alt="Shape Shifter screenshot" />
+								<img src="media/fragment/fragment_screenshot_5.png" alt="Shape Shifter screenshot" />
+								<img src="media/fragment/fragment_screenshot_6.png" alt="Shape Shifter screenshot" />
+								<img src="media/fragment/fragment_screenshot_7.png" alt="Shape Shifter screenshot" />
+							</div>
+							<div>
+								<img src="media/fragment/fragment_screenshot_1.png" alt="Shape Shifter screenshot" />
+								<img src="media/fragment/fragment_screenshot_2.png" alt="Shape Shifter screenshot" />
+								<img src="media/fragment/fragment_screenshot_3.png" alt="Shape Shifter screenshot" />
+								<img src="media/fragment/fragment_screenshot_4.png" alt="Shape Shifter screenshot" />
+								<img src="media/fragment/fragment_screenshot_5.png" alt="Shape Shifter screenshot" />
+								<img src="media/fragment/fragment_screenshot_6.png" alt="Shape Shifter screenshot" />
+								<img src="media/fragment/fragment_screenshot_7.png" alt="Shape Shifter screenshot" />
+							</div>
+						</div>
+					</div>
+				</div>
+
+
+
+
+
+				<div class="project_box fade_in" style="transition-delay: 200ms;">
+					<a onclick="showOverlay('shape_shifter')" class="project_thumbnail">
+						<img src="media/shape_shifter/shape_shifter_banner.png" alt="Shape Shifter Banner" />
+					</a>
+
+					<p class="project_box_description">
+						<b class="project_name_label blue">Game Development</b>
+						<b class="project_name_label green">Godot/GDScript</b>
+						<b class="project_name_label purple">Solo Project</b>
+						<b class="project_name_label red">Steam</b>
+						<b class="project_name_label red">Multiplayer</b>
+						<br><br>
+						<b>SHAPE SHIFTER</b> started as a 2D Level Editor I made in <i>Godot</i> for a school assignment in
+						January of 2024 but turned into a passion project of mine to explore the power of Steam and the Steamworks-API.
+						<br><br>
+						<b>Time to develop:</b> About 3 months
+					</p>
+					
+				</div>
+				
+				<div class="project_box fade_in"  style="transition-delay: 400ms;">
+					<a onclick="showOverlay('esrc')" class="project_thumbnail">
+						<img src="media/esrc/esrc_screenshot_1.png" alt="ESRC Banner" />
+					</a>
+					<p class="project_box_description">
+						<b class="project_name_label blue">Game Development</b>
+						<b class="project_name_label green">Unreal Engine/C++</b>
+						<b class="project_name_label purple">Solo Project</b>
+						<br><br>
+						<b>Elite Space Repair Crew</b> started as an effort to create a random level generator using the
+						incredibly powerful <i>Unreal Engine</i>.
+						The project became 3D first-person game where the player must avoid an evil robot while
+						repairing a space station.
+						<br><br>
+						<b>Time to develop:</b> About 1.5 months [so far]
+
+					</p>
+				</div>
+				<div class="project_box fade_in" style="transition-delay: 200ms;">
+					<a onclick="showOverlay('ace_of_shades')" class="project_thumbnail">
+						<img src="media/aos/aos_banner.png" alt="Ace of Shades Banner" />
+					</a>
+					<p class="project_box_description">
+						<b class="project_name_label blue">Game Development</b>
+						<b class="project_name_label green">Unity/C#</b>
+						<b class="project_name_label red">VR</b>
+						<br><br>
+						<b>Ace Of Shades</b> is a Virtual Reality (VR) game I made in <i>Unity</i> for a school assignment.
+						It contains voice acting, Valve Index grip controls, custom music, multiple weapons with unique firing patterns and a boss fight.
+						<br><br>
+						<b>Time to develop:</b> About 1 month
+					</p>
+				</div>
+				<div class="project_box fade_in" style="transition-delay: 400ms;">
+					<a onclick="showOverlay('fragment')" class="project_thumbnail">
+						<img src="media/fragment/fragment_banner_idea.png" alt="Fragment Banner" />
+					</a>
+					<p class="project_box_description">
+						<b class="project_name_label blue">Game Development</b>
+						<b class="project_name_label green">Godot/GDScript</b>
+						<b class="project_name_label purple">Solo Project</b>
+						<br><br>
+						<b>Fragment</b> is a nonlinear 2D Side-scrolling Metroidvania I'm making in <i>Godot</i>.
+						<br>The game will gradually introduce new mechanics that the player must learn to use so they can explore more of the world and eventually beat a boss enemy.
+						<br><br>
+						<b>Time to develop:</b> About 3 months [so far]
+					</p>
+				</div>
+			</div>
+
+			<div id="skills"></div>
+			<div class="ribbon flat_ribbon">
+				<h1>
+					Technical Skills
+				</h1>
+				<p> An overview of some of my technical skills</p>
+			</div>
+			<br><br><br><br><br><br><br><br>
+			<div class="skills_page">
+
+				<div class="skills_segment fade_in">
+					<span class="skill_segment_title">Intermediate</span>
+					<div class="skills_row">
+						<div class="skill_box">
+							<img src="media/skills/blender.png"/>
+							<span class="tooltip">
+								<div></div>
+								<span>Blender</span>
+							</span>
+						</div>
+
+						<div class="skill_box">
+							<img src="media/skills/unity.png"/>
+							<span class="tooltip">
+								<div></div>
+								<span>Unity</span>
+							</span>
+						</div>
+					</div>
+					<div class="skills_row">
+
+
+						<div class="skill_box">
+							<img src="media/skills/c_sharp.svg"/>
+							<span class="tooltip">
+								<div></div>
+								<span>C Sharp</span>
+							</span>
+						</div>
+						<div class="skill_box">
+							<img src="media/skills/python.svg"/>
+							<span class="tooltip">
+								<div></div>
+								<span>Python</span>
+							</span>
+						</div>
+					</div>
+					<div class="skills_row">
+						<div class="skill_box">
+							<img src="media/skills/github.svg"/>
+							<span class="tooltip">
+								<div></div>
+								<span>GitHub</span>
+							</span>
+						</div>
+					</div>
+				</div>
+				<div class="skills_segment fade_in">
+					<span class="skill_segment_title">Advanced</span>
+					<div class="skills_row">
+						<div class="skill_box">
+							<img src="media/skills/godot.svg"/>
+							<span class="tooltip">
+								<div></div>
+								<span>Godot / GDScript</span>
+							</span>
+						</div>
+						<div class="skill_box">
+							<img src="media/skills/fl_studio_small.png"/>
+							<span class="tooltip">
+								<div></div>
+								<span>FL Studio</span>
+							</span>
+						</div>
+					</div>
+					<div class="skills_row">
+						<div class="skill_box">
+							<img src="media/skills/photoshop.svg"/>
+							<span class="tooltip">
+								<div></div>
+								<span>Photoshop</span>
+							</span>
+						</div>
+						<div class="skill_box">
+							<img src="media/skills/premiere_pro.svg"/>
+							<span class="tooltip">
+								<div></div>
+								<span>Premiere Pro</span>
+							</span>
+						</div>
+					</div>
+					<div class="skills_row">
+						<div class="skill_box">
+							<img src="media/skills/steam.svg"/>
+							<span class="tooltip">
+								<div></div>
+								<span>Steamworks Backend</span>
+							</span>
+						</div>
+					</div>
+					
+
+
+
+					
+
+					
+				</div>
+				<div class="skills_segment fade_in">
+					<span class="skill_segment_title">Beginner</span>
+					<div class="skills_row">
+						<div class="skill_box">
+							<img src="media/skills/unreal_engine.svg"/>
+							<span class="tooltip">
+								<div></div>
+								<span>Unreal Engine</span>
+							</span>
+						</div>
+						<div class="skill_box">
+							<img src="media/skills/cpp.png"/>
+							<span class="tooltip">
+								<div></div>
+								<span>C++</span>
+							</span>
+						</div>
+					</div>
+					<div class="skills_row">
+						<div class="skill_box">
+							<img src="media/skills/javascript.svg"/>
+							<span class="tooltip">
+								<div></div>
+								<span>JavaScript</span>
+							</span>
+						</div>
+						<div class="skill_box">
+							<img src="media/skills/html.svg"/>
+							<span class="tooltip">
+								<div></div>
+								<span>HTML</span>
+							</span>
+						</div>
+					</div>
+					<div class="skills_row">
+						<div class="skill_box">
+							<img src="media/skills/css.svg"/>
+							<span class="tooltip">
+								<div></div>
+								<span>CSS</span>
+							</span>
+						</div>
+					</div>
+				</div>
+			
+
+			</div>
+			<br><br><br><br><br><br><br>
+			<div class="ribbon">
+				<br>
+				<br>
+
+				<h1 id="contact">
+					Contact
+				</h1>
+				<a class="fade_in" style="transition-delay: 0.1s;" title="Send me an Email" href="https://mail.google.com/mail/u/1/?extsrc=mailto&url=mailto%3Akai.williams%40coderclass.nl" target="_blank"><img class="contact_icon" src="media/mail_icon.png"/></a>
+				<br>
+				<br>
+				<br>
+				<br>
+				
+				kai.williams@coderclass.nl<br>
+				6 vwo<br>
+				Mauritskade 58<br>
+				1092 AD Amsterdam<br>
+				020 59 79 300<br>
+
+				<br>
+				<br>
+			</div>
+		</div>
+		
+
+	</body>
+</main>
