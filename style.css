@@ -497,7 +497,7 @@ h1 {
 	z-index: 100 !important;
 	position:relative;
 	transition: 0.3s;
-	
+	cursor: pointer;
 
 }
 
