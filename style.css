@@ -592,7 +592,6 @@ h1 {
 	transition: all 0.3s;
 	position: relative;
 	display: flex;
-	cursor: pointer;
 }
 
 .skill_box:hover img{
